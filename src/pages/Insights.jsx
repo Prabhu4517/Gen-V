@@ -19,8 +19,9 @@ export default function Insights() {
   return (
     <>
       <SEO
-        title="Engineering Insights & Technical Architecture Blog"
-        description="Deep dives into software architecture, scalable APIs, AI automation pipelines, and modern mobile app development."
+        title="Engineering Insights & Technology Articles | GEN V SOLUTIONS"
+        description="Deep dives into cloud architecture, AI automation, full-stack performance profiling, DevOps security, and modern web engineering."
+        canonical="/insights"
       />
 
       <PageHero

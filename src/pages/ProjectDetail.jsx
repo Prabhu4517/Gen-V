@@ -18,6 +18,7 @@ import SectionHeader from '../components/common/SectionHeader';
 import Button from '../components/common/Button';
 import Badge from '../components/common/Badge';
 import ProjectCard from '../components/portfolio/ProjectCard';
+import SocialShare from '../components/common/SocialShare';
 import { projectsData } from '../data/projects';
 
 export default function ProjectDetail() {
@@ -43,6 +44,9 @@ export default function ProjectDetail() {
       <SEO
         title={`${project.title} | Case Study & Architecture`}
         description={project.summary}
+        canonical={`/portfolio/${project.slug}`}
+        ogImage={project.image}
+        breadcrumbs={breadcrumbs}
       />
 
       <PageHero
@@ -225,6 +229,15 @@ export default function ProjectDetail() {
                     </span>
                   ))}
                 </div>
+              </div>
+
+              {/* Share Case Study Card */}
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+                <SocialShare
+                  title={`${project.title} - Case Study by GEN V SOLUTIONS`}
+                  description={project.summary}
+                  path={`/portfolio/${project.slug}`}
+                />
               </div>
 
               {/* Discuss similar project CTA card */}

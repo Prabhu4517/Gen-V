@@ -38,8 +38,10 @@ export default function ServiceDetail() {
   return (
     <>
       <SEO
-        title={`${service.title} | Technical Capabilities & Deliverables`}
-        description={service.description}
+        title={`${service.title} | Software Engineering Services`}
+        description={service.tagline || service.description}
+        canonical={`/services/${service.slug}`}
+        breadcrumbs={breadcrumbs}
       />
 
       <PageHero

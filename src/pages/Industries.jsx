@@ -30,8 +30,9 @@ export default function Industries() {
   return (
     <>
       <SEO
-        title="Industry Solutions & Sector Specialization"
-        description="Discover how our engineering solutions address compliance, operational friction, and customer experience across real estate, healthcare, education, retail, and SaaS."
+        title="Industry Verticals & Sector Specializations | GEN V SOLUTIONS"
+        description="Enterprise technology solutions tailored for FinTech, Healthcare, Logistics, CleanTech, E-Commerce, and SaaS organizations."
+        canonical="/industries"
       />
 
       <PageHero

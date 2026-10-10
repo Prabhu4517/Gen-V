@@ -7,8 +7,9 @@ export default function NotFound() {
   return (
     <>
       <SEO
-        title="404 Page Not Found"
+        title="404 Page Not Found | GEN V SOLUTIONS"
         description="The requested page could not be located."
+        noindex={true}
       />
 
       <section className="min-h-[80vh] flex items-center justify-center py-24 text-center px-4 bg-slate-50 border-b border-slate-200">

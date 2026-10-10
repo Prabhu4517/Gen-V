@@ -189,8 +189,10 @@ export default function Home() {
   return (
     <div className="bg-white text-slate-900 selection:bg-amber-500 selection:text-slate-950">
       <SEO
-        title="GEN V — IT Software, Tech & Solutions"
-        description="We architect and engineer next-generation digital products, robust cloud systems, and AI workflows for modern enterprises and fast-growing businesses."
+        title="GEN V SOLUTIONS | IT Software Development & Technology Solutions"
+        description="GEN V SOLUTIONS builds custom software, web and mobile applications, AI automation, SaaS platforms, API integrations, and cloud solutions for businesses."
+        canonical="/"
+        ogImage="/og-image.png"
       />
 
       {/* =========================================================
@@ -202,6 +204,8 @@ export default function Home() {
           <img
             src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80"
             alt="IT Software Solutions Engineering Team"
+            loading="eager"
+            fetchPriority="high"
             className="w-full h-full object-cover object-center opacity-70 brightness-100 contrast-110"
           />
           {/* Directional gradient: darker on left for text readability, clear on right for vivid image view */}

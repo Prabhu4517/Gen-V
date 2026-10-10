@@ -1,4 +1,15 @@
+# GEN V SOLUTIONS Robots Directives
 User-agent: *
 Allow: /
+Allow: /assets/
+Allow: /logoMain.png
+Allow: /favicon.png
+Allow: /og-image.png
 
-Sitemap: https://nexoratech.io/sitemap.xml
+# Disallow build and temporary internals
+Disallow: /api/
+Disallow: /admin/
+Disallow: /staging/
+
+# Verified Canonical XML Sitemap
+Sitemap: https://gen-v-2obd.onrender.com/sitemap.xml

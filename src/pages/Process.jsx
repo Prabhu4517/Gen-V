@@ -20,8 +20,9 @@ export default function Process() {
   return (
     <>
       <SEO
-        title="Our 7-Stage Software Development Lifecycle & Delivery Framework"
-        description="Learn how Nexora executes software engineering projects from initial requirements discovery through architecture, agile sprints, QA, launch, and maintenance."
+        title="Engineering Process & Delivery Lifecycle | GEN V SOLUTIONS"
+        description="Understand our disciplined 5-stage software engineering lifecycle, agile sprint delivery, CI/CD pipeline automation, and code ownership guarantees."
+        canonical="/process"
       />
 
       <PageHero

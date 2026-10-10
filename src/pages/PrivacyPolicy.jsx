@@ -9,8 +9,9 @@ export default function PrivacyPolicy() {
   return (
     <>
       <SEO
-        title="Privacy Policy | Data Protection & Confidentiality"
-        description="Review how Nexora Technologies collects, handles, and safeguards client information."
+        title="Privacy Policy | GEN V SOLUTIONS"
+        description="Understand how GEN V SOLUTIONS collects, protects, and handles personal data and client confidential information."
+        canonical="/privacy-policy"
       />
 
       <PageHero

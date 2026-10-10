@@ -9,8 +9,9 @@ export default function TermsOfService() {
   return (
     <>
       <SEO
-        title="Terms of Service | Website & Service Terms"
-        description="Terms of service and engagement principles for Nexora Technologies."
+        title="Terms of Service | GEN V SOLUTIONS"
+        description="Terms and conditions governing consulting agreements, software engineering retainers, intellectual property ownership, and warranties."
+        canonical="/terms-of-service"
       />
 
       <PageHero

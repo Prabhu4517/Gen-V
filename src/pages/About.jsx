@@ -39,8 +39,9 @@ export default function About() {
   return (
     <>
       <SEO
-        title="About Us | Technical Philosophy & Company Mission"
-        description="Learn about GEN V Technologies, our software engineering philosophy, core values, and how we help businesses build resilient digital products."
+        title="About GEN V SOLUTIONS | Technology Partner for Businesses"
+        description="Learn about GEN V SOLUTIONS, our software engineering capabilities, development process, and approach to building reliable digital products."
+        canonical="/about"
       />
 
       <PageHero

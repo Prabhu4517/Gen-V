@@ -4,6 +4,7 @@ import { Calendar, Clock, ArrowLeft, ArrowRight, Sparkles } from 'lucide-react';
 import SEO from '../components/common/SEO';
 import Button from '../components/common/Button';
 import Badge from '../components/common/Badge';
+import SocialShare from '../components/common/SocialShare';
 import { insightsData } from '../data/insights';
 
 export default function InsightDetail() {
@@ -14,6 +15,11 @@ export default function InsightDetail() {
     return <Navigate to="/insights" replace />;
   }
 
+  const breadcrumbs = [
+    { label: 'Insights', path: '/insights' },
+    { label: article.title, path: `/insights/${article.slug}` }
+  ];
+
   const relatedArticles = insightsData
     .filter((a) => a.id !== article.id)
     .slice(0, 2);
@@ -23,7 +29,11 @@ export default function InsightDetail() {
       <SEO
         title={`${article.title} | Engineering Insights`}
         description={article.summary}
+        canonical={`/insights/${article.slug}`}
         ogType="article"
+        ogImage={article.image}
+        articleData={article}
+        breadcrumbs={breadcrumbs}
       />
 
       <article className="pt-32 pb-24 bg-white border-b border-slate-200 text-slate-900">
@@ -91,7 +101,7 @@ export default function InsightDetail() {
           </div>
 
           {/* Tags */}
-          <div className="pt-8 border-t border-slate-200 flex flex-wrap items-center gap-2 mb-16">
+          <div className="pt-8 border-t border-slate-200 flex flex-wrap items-center gap-2 mb-10">
             <span className="text-xs text-slate-500 font-bold uppercase tracking-wider mr-2">
               Tags:
             </span>
@@ -103,6 +113,15 @@ export default function InsightDetail() {
                 #{tag}
               </span>
             ))}
+          </div>
+
+          {/* Social Share */}
+          <div className="mb-14 p-6 rounded-2xl bg-slate-50 border border-slate-200">
+            <SocialShare
+              title={`${article.title} - GEN V SOLUTIONS`}
+              description={article.summary}
+              path={`/insights/${article.slug}`}
+            />
           </div>
 
           {/* CTA Box */}

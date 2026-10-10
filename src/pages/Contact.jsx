@@ -20,8 +20,9 @@ export default function Contact() {
   return (
     <>
       <SEO
-        title="Contact Us | Start Your Project Conversation"
-        description="Get in touch with Nexora Technologies for custom software development, web & mobile applications, AI automation, and cloud architecture consulting."
+        title="Contact GEN V SOLUTIONS | Discuss Your Project"
+        description="Contact GEN V SOLUTIONS to discuss your software development requirements, digital product ideas, integrations, and technology projects."
+        canonical="/contact"
       />
 
       <PageHero

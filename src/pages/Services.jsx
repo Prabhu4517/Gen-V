@@ -13,8 +13,9 @@ export default function Services() {
   return (
     <>
       <SEO
-        title="Our Technical Services & Software Practices"
-        description="Comprehensive software development and digital engineering services: web applications, mobile apps, AI solutions, backend systems, SaaS platforms, and DevOps."
+        title="Software Development Services | GEN V SOLUTIONS"
+        description="Explore custom software development, web applications, mobile apps, AI automation, backend APIs, SaaS solutions, and cloud deployment services."
+        canonical="/services"
       />
 
       <PageHero

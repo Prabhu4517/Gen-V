@@ -32,8 +32,9 @@ export default function Portfolio() {
   return (
     <>
       <SEO
-        title="Portfolio & Case Studies | Delivered Software Projects"
-        description="Explore our technical portfolio: custom SaaS platforms, mobile apps, enterprise cloud migrations, and AI workflow automations."
+        title="Our Projects & Software Portfolio | GEN V SOLUTIONS"
+        description="Explore software projects, business applications, digital products, and technology solutions developed by GEN V SOLUTIONS."
+        canonical="/portfolio"
       />
 
       <PageHero
