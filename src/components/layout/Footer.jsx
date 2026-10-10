@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Sparkles, Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react';
 import { footerColumns } from '../../data/navigation';
 import { companyConfig } from '../../data/companyConfig';
+import Logo from '../common/Logo';
 
 export default function Footer() {
   const currentYear = 2026;
@@ -16,20 +17,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-14">
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-4">
-            <Link to="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-purple-600 p-[1.5px]">
-                <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
-                  <Sparkles className="w-5 h-5 text-indigo-400" />
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold tracking-tight text-white">
-                  {companyConfig.name}
-                </span>
-                <span className="text-[10px] text-slate-400 uppercase tracking-widest font-semibold">
-                  Engineering Digital Excellence
-                </span>
-              </div>
+            <Link to="/" className="group inline-block">
+              <Logo size="md" />
             </Link>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">

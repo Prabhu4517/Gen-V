@@ -3,18 +3,18 @@
  * Keep all company metadata centralized and easily customizable.
  */
 export const companyConfig = {
-  name: "Nexora Technologies",
-  legalName: "Nexora Technologies Pvt. Ltd.",
-  shortName: "Nexora",
+  name: "GEN V Technologies",
+  legalName: "GEN V Technologies Pvt. Ltd.",
+  shortName: "GEN V",
   tagline: "Engineering Next-Generation Digital Products & Enterprise Software",
   description:
     "We partner with ambitious startups and modern enterprises to architect, build, and scale resilient web platforms, mobile applications, AI workflows, and cloud systems.",
   
-  // Contact Information (Configurable placeholders)
+  // Contact Information
   contact: {
-    email: "contact@nexoratech.io",
-    salesEmail: "sales@nexoratech.io",
-    supportEmail: "support@nexoratech.io",
+    email: "contact@genv.tech",
+    salesEmail: "sales@genv.tech",
+    supportEmail: "support@genv.tech",
     phone: "+1 (555) 389-9210",
     intlPhone: "+1 (555) 389-9210",
     whatsapp: "+15553899210",
@@ -38,9 +38,9 @@ export const companyConfig = {
     youtube: "https://youtube.com"
   },
 
-  // Metadata & Stats (truthful, capability-based)
+  // Metadata & Stats
   meta: {
-    domain: "https://nexoratech.io",
+    domain: "https://genv.tech",
     foundingYear: "2024",
     experienceYears: "8+ Combined Years",
     supportedStackCount: "35+",
@@ -49,6 +49,6 @@ export const companyConfig = {
   },
 
   // Verification & Statuses
-  enquiryBackendConfigured: false, // Set to true when an API gateway / CRM endpoint is linked
+  enquiryBackendConfigured: false,
   backendEndpoint: ""
 };

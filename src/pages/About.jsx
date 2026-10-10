@@ -40,12 +40,12 @@ export default function About() {
     <>
       <SEO
         title="About Us | Technical Philosophy & Company Mission"
-        description="Learn about Nexora Technologies, our software engineering philosophy, core values, and how we help businesses build resilient digital products."
+        description="Learn about GEN V Technologies, our software engineering philosophy, core values, and how we help businesses build resilient digital products."
       />
 
       <PageHero
         breadcrumbs={breadcrumbs}
-        badge="About Nexora"
+        badge="About GEN V"
         title="Engineering Software with"
         highlight="Clarity, Precision & Purpose"
         description="We are a digital product engineering and technology solutions startup dedicated to helping ambitious businesses plan, architect, and deploy reliable software products."
@@ -160,7 +160,7 @@ export default function About() {
                 <span>engineering_standards.ts</span>
               </div>
               <pre className="pt-6 overflow-x-auto text-indigo-300 leading-relaxed">
-{`// Nexora Engineering Guarantees
+{`// GEN V Engineering Guarantees
 export const standards = {
   architecture: "Clean Modular & Decoupled",
   testCoverage: "Unit & E2E Integration Suite",

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, X, ArrowRight, Sparkles } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 import { navLinks } from '../../data/navigation';
 import { companyConfig } from '../../data/companyConfig';
 import Button from '../common/Button';
+import Logo from '../common/Logo';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,22 +36,9 @@ export default function Navbar() {
           <Link
             to="/"
             onClick={closeMobileMenu}
-            className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-lg"
+            className="group focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-lg"
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-purple-600 p-[1.5px] transition-transform duration-300 group-hover:scale-105 shadow-md shadow-indigo-500/20">
-              <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-indigo-400 group-hover:text-cyan-400 transition-colors" />
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold tracking-tight text-white group-hover:text-indigo-200 transition-colors">
-                {companyConfig.shortName}
-                <span className="text-indigo-400 font-normal">.tech</span>
-              </span>
-              <span className="text-[10px] text-slate-400 uppercase tracking-widest -mt-1 font-semibold">
-                Solutions Hub
-              </span>
-            </div>
+            <Logo size="md" />
           </Link>
 
           {/* Desktop Nav Links */}

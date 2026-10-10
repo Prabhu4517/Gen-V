@@ -146,7 +146,7 @@ export default function Home() {
           <SectionHeader
             badge="Engineering Philosophy"
             title="Why Ambitious Leaders"
-            highlight="Choose Nexora"
+            highlight="Choose GEN V"
             subtitle="We reject black-box development. Our partnership provides transparent code repositories, predictable agile delivery, and senior technical leadership."
             className="mb-16"
           />
