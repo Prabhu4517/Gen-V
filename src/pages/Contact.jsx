@@ -12,7 +12,6 @@ import {
 import SEO from '../components/common/SEO';
 import PageHero from '../components/common/PageHero';
 import ContactForm from '../components/forms/ContactForm';
-import Card from '../components/common/Card';
 import { companyConfig } from '../data/companyConfig';
 
 export default function Contact() {
@@ -31,11 +30,11 @@ export default function Contact() {
         title="Let’s Discuss Your Product Roadmap &"
         highlight="Technical Requirements"
         description="Whether you have a fully documented specification or an early-stage concept, our technical leads are ready to review your project."
-      >
-      </PageHero>
+        backgroundImage="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1920&q=80"
+      />
 
-      {/* Main Form and Contact Details Section */}
-      <section className="py-24 border-b border-slate-800/60">
+      {/* Main Form and Contact Details Section (Light Slate Background) */}
+      <section className="py-24 bg-slate-50 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             {/* Left 7 Columns: Form */}
@@ -45,24 +44,24 @@ export default function Contact() {
 
             {/* Right 5 Columns: Direct Contact Channels & SLA */}
             <div className="lg:col-span-5 space-y-8">
-              {/* Direct Channels Card */}
-              <Card>
-                <h3 className="text-xl font-bold text-white mb-6">
+              {/* Direct Channels Card (Clean White) */}
+              <div className="p-8 rounded-2xl bg-white border border-slate-200 shadow-xl text-slate-900">
+                <h3 className="text-xl font-black text-slate-950 mb-6">
                   Direct Communication Channels
                 </h3>
 
                 <div className="space-y-6 text-sm">
                   <div className="flex items-start gap-3.5">
-                    <div className="p-2.5 rounded-xl bg-indigo-500/10 text-indigo-400 shrink-0">
+                    <div className="p-2.5 rounded-xl bg-amber-500/10 text-amber-600 shrink-0">
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs text-slate-400 uppercase font-semibold">
+                      <div className="text-xs text-slate-500 uppercase font-bold">
                         General Inquiries & Sales
                       </div>
                       <a
                         href={`mailto:${companyConfig.contact.email}`}
-                        className="text-white hover:text-indigo-300 font-medium transition-colors"
+                        className="text-slate-950 hover:text-amber-600 font-semibold transition-colors"
                       >
                         {companyConfig.contact.email}
                       </a>
@@ -70,16 +69,16 @@ export default function Contact() {
                   </div>
 
                   <div className="flex items-start gap-3.5">
-                    <div className="p-2.5 rounded-xl bg-indigo-500/10 text-indigo-400 shrink-0">
+                    <div className="p-2.5 rounded-xl bg-amber-500/10 text-amber-600 shrink-0">
                       <Phone className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs text-slate-400 uppercase font-semibold">
+                      <div className="text-xs text-slate-500 uppercase font-bold">
                         Phone & Technical Scoping
                       </div>
                       <a
                         href={`tel:${companyConfig.contact.phone}`}
-                        className="text-white hover:text-indigo-300 font-medium transition-colors"
+                        className="text-slate-950 hover:text-amber-600 font-semibold transition-colors"
                       >
                         {companyConfig.contact.phone}
                       </a>
@@ -88,18 +87,18 @@ export default function Contact() {
 
                   {companyConfig.contact.whatsapp && (
                     <div className="flex items-start gap-3.5">
-                      <div className="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-400 shrink-0">
+                      <div className="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-600 shrink-0">
                         <MessageSquare className="w-5 h-5" />
                       </div>
                       <div>
-                        <div className="text-xs text-slate-400 uppercase font-semibold">
+                        <div className="text-xs text-slate-500 uppercase font-bold">
                           Direct WhatsApp Chat
                         </div>
                         <a
                           href={`https://wa.me/${companyConfig.contact.whatsapp.replace(/[^0-9]/g, '')}`}
                           target="_blank"
                           rel="noreferrer"
-                          className="text-emerald-400 hover:text-emerald-300 font-medium transition-colors inline-flex items-center gap-1"
+                          className="text-emerald-600 hover:text-emerald-700 font-bold transition-colors inline-flex items-center gap-1"
                         >
                           <span>Open WhatsApp Chat</span>
                           <ExternalLink className="w-3.5 h-3.5" />
@@ -109,45 +108,45 @@ export default function Contact() {
                   )}
 
                   <div className="flex items-start gap-3.5">
-                    <div className="p-2.5 rounded-xl bg-indigo-500/10 text-indigo-400 shrink-0">
+                    <div className="p-2.5 rounded-xl bg-amber-500/10 text-amber-600 shrink-0">
                       <Clock className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs text-slate-400 uppercase font-semibold">
+                      <div className="text-xs text-slate-500 uppercase font-bold">
                         Working Hours & SLA
                       </div>
-                      <div className="text-white">
+                      <div className="text-slate-900 font-semibold">
                         {companyConfig.contact.workingHours}
                       </div>
-                      <div className="text-xs text-slate-400 mt-0.5">
+                      <div className="text-xs text-slate-500 mt-0.5 font-medium">
                         Guaranteed response within 24 business hours
                       </div>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3.5">
-                    <div className="p-2.5 rounded-xl bg-indigo-500/10 text-indigo-400 shrink-0">
+                    <div className="p-2.5 rounded-xl bg-amber-500/10 text-amber-600 shrink-0">
                       <MapPin className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs text-slate-400 uppercase font-semibold">
+                      <div className="text-xs text-slate-500 uppercase font-bold">
                         Headquarters & Operations
                       </div>
-                      <div className="text-white">
+                      <div className="text-slate-900 font-semibold">
                         {companyConfig.contact.address.street}
                       </div>
-                      <div className="text-slate-400 text-xs">
+                      <div className="text-slate-500 text-xs font-medium">
                         {companyConfig.contact.address.city}, {companyConfig.contact.address.state} {companyConfig.contact.address.zip}
                       </div>
                     </div>
                   </div>
                 </div>
-              </Card>
+              </div>
 
-              {/* Guarantees Box */}
-              <div className="p-6 rounded-2xl bg-gradient-to-br from-indigo-950/40 to-slate-900 border border-indigo-500/20">
+              {/* Guarantees Box (Dark Charcoal Accent Box) */}
+              <div className="p-6 rounded-2xl bg-slate-950 text-white border-2 border-slate-900 shadow-xl">
                 <h4 className="text-base font-bold text-white mb-3 flex items-center gap-2">
-                  <ShieldCheck className="w-5 h-5 text-indigo-400" />
+                  <ShieldCheck className="w-5 h-5 text-amber-400" />
                   <span>Our Inquiry Guarantees</span>
                 </h4>
                 <ul className="space-y-2.5 text-xs text-slate-300">

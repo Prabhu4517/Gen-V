@@ -48,7 +48,8 @@ export default function About() {
         badge="About GEN V"
         title="Engineering Software with"
         highlight="Clarity, Precision & Purpose"
-        description="We are a digital product engineering and technology solutions startup dedicated to helping ambitious businesses plan, architect, and deploy reliable software products."
+        description="We are a digital product engineering and technology solutions company dedicated to helping ambitious businesses plan, architect, and deploy reliable software products."
+        backgroundImage="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80"
       >
         <div className="flex flex-wrap gap-4">
           <Button to="/contact" icon={ArrowRight} iconPosition="right">
@@ -60,26 +61,26 @@ export default function About() {
         </div>
       </PageHero>
 
-      {/* Mission & Vision Section */}
-      <section className="py-24 border-b border-slate-800/60">
+      {/* Mission & Vision Section (Clean White Background) */}
+      <section className="py-24 bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="border-indigo-500/30">
-              <div className="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-6">
+            <Card className="border-slate-200 hover:border-amber-500 bg-white">
+              <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-600 mb-6">
                 <Target className="w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-3">Our Mission</h3>
-              <p className="text-slate-300 text-base leading-relaxed">
+              <h3 className="text-2xl font-bold text-slate-950 mb-3">Our Mission</h3>
+              <p className="text-slate-600 text-base leading-relaxed">
                 To empower founders and forward-thinking businesses by translating ambitious technical visions into resilient, scalable, and beautifully designed digital products that create sustainable competitive advantage.
               </p>
             </Card>
 
-            <Card className="border-purple-500/30">
-              <div className="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-6">
+            <Card className="border-slate-200 hover:border-amber-500 bg-white">
+              <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-600 mb-6">
                 <Compass className="w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-3">Our Vision</h3>
-              <p className="text-slate-300 text-base leading-relaxed">
+              <h3 className="text-2xl font-bold text-slate-950 mb-3">Our Vision</h3>
+              <p className="text-slate-600 text-base leading-relaxed">
                 To be the most trusted software engineering partner for modern startups and enterprises—recognized for uncompromising code quality, transparent delivery frameworks, and empathetic technical leadership.
               </p>
             </Card>
@@ -87,8 +88,8 @@ export default function About() {
         </div>
       </section>
 
-      {/* Core Values Section */}
-      <section className="py-24 border-b border-slate-800/60 bg-slate-900/30">
+      {/* Core Values Section (Light Slate Background) */}
+      <section className="py-24 border-b border-slate-200 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="Our Guiding Principles"
@@ -104,13 +105,13 @@ export default function About() {
               return (
                 <div
                   key={idx}
-                  className="p-8 rounded-2xl bg-slate-950/70 border border-slate-800/80 backdrop-blur-sm"
+                  className="p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-amber-500 hover:shadow-md transition-all"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-5">
+                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-600 mb-5">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h4 className="text-xl font-bold text-white mb-3">{val.title}</h4>
-                  <p className="text-sm text-slate-400 leading-relaxed">
+                  <h4 className="text-xl font-bold text-slate-950 mb-3">{val.title}</h4>
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     {val.description}
                   </p>
                 </div>
@@ -120,18 +121,18 @@ export default function About() {
         </div>
       </section>
 
-      {/* Development Philosophy */}
-      <section className="py-24 border-b border-slate-800/60">
+      {/* Development Philosophy (Clean White Background) */}
+      <section className="py-24 border-b border-slate-200 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-4">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-500/15 text-amber-600 border border-amber-500/30 mb-4">
                 Engineering Discipline
               </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-6 leading-tight">
-                How We Approach <span className="tech-gradient-text">Software Craftsmanship</span>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 mb-6 leading-tight">
+                How We Approach <span className="text-amber-500">Software Craftsmanship</span>
               </h2>
-              <div className="space-y-4 text-slate-300 text-sm leading-relaxed">
+              <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
                 <p>
                   Building production software is not just about writing features; it is about managing complexity over time. We believe in domain-driven design, modular components, and automated continuous integration that catches regressions before users ever experience them.
                 </p>
@@ -144,14 +145,14 @@ export default function About() {
               </div>
 
               <div className="mt-8">
-                <Button to="/process" variant="outline" icon={ArrowRight} iconPosition="right">
+                <Button to="/process" variant="secondary" icon={ArrowRight} iconPosition="right">
                   Explore Our 7-Stage Process
                 </Button>
               </div>
             </div>
 
-            <div className="rounded-2xl bg-slate-900/90 border border-slate-800/90 p-8 font-mono text-xs text-slate-300 shadow-2xl relative overflow-hidden">
-              <div className="flex items-center justify-between pb-4 border-b border-slate-800 text-slate-500">
+            <div className="rounded-2xl bg-slate-950 p-8 font-mono text-xs text-slate-300 shadow-2xl border-2 border-slate-900 relative overflow-hidden">
+              <div className="flex items-center justify-between pb-4 border-b border-slate-800 text-slate-400">
                 <div className="flex items-center space-x-2">
                   <span className="w-3 h-3 rounded-full bg-rose-500/80"></span>
                   <span className="w-3 h-3 rounded-full bg-amber-500/80"></span>
@@ -159,7 +160,7 @@ export default function About() {
                 </div>
                 <span>engineering_standards.ts</span>
               </div>
-              <pre className="pt-6 overflow-x-auto text-indigo-300 leading-relaxed">
+              <pre className="pt-6 overflow-x-auto text-amber-300 leading-relaxed font-semibold">
 {`// GEN V Engineering Guarantees
 export const standards = {
   architecture: "Clean Modular & Decoupled",
@@ -176,13 +177,18 @@ export const standards = {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 text-center">
+      {/* Strategic Dark CTA Strip (like Home page) */}
+      <section className="py-20 bg-slate-950 text-white text-center border-t border-slate-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-400 mb-4">
+            <span className="w-6 h-0.5 bg-amber-500"></span>
+            <span>LET'S CONNECT</span>
+            <span className="w-6 h-0.5 bg-amber-500"></span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
             Partner With An Engineering Team Dedicated To Your Success
           </h2>
-          <p className="text-slate-400 text-base max-w-2xl mx-auto mb-8">
+          <p className="text-slate-300 text-base max-w-2xl mx-auto mb-8">
             Let’s review your project architecture and deliverable timeline together.
           </p>
           <Button to="/contact" size="lg" icon={ArrowRight} iconPosition="right">

@@ -11,15 +11,15 @@ export default function NotFound() {
         description="The requested page could not be located."
       />
 
-      <section className="min-h-[80vh] flex items-center justify-center py-24 text-center px-4">
+      <section className="min-h-[80vh] flex items-center justify-center py-24 text-center px-4 bg-slate-50 border-b border-slate-200">
         <div className="max-w-md mx-auto">
-          <div className="text-8xl font-black text-indigo-500/30 mb-2 font-mono">
+          <div className="text-8xl font-black text-amber-500/30 mb-2 font-mono">
             404
           </div>
-          <h1 className="text-3xl font-bold text-white mb-4">
+          <h1 className="text-3xl font-black text-slate-950 mb-4">
             Page Not Found
           </h1>
-          <p className="text-slate-400 text-sm mb-8 leading-relaxed">
+          <p className="text-slate-600 text-sm mb-8 leading-relaxed font-medium">
             The page you are looking for may have been moved, renamed, or is temporarily unavailable.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">

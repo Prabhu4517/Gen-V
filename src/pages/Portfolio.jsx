@@ -42,10 +42,11 @@ export default function Portfolio() {
         title="Selected Client Products &"
         highlight="Technical Case Studies"
         description="Review detailed architectural breakdowns, implemented solutions, and verified outcomes across web, mobile, AI, and cloud domains."
+        backgroundImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1920&q=80"
       />
 
-      {/* Filter and Search Bar Section */}
-      <section className="py-12 border-b border-slate-800/60 bg-slate-900/40">
+      {/* Filter and Search Bar Section (Light Slate Background) */}
+      <section className="py-12 border-b border-slate-200 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             {/* Category Buttons */}
@@ -54,10 +55,10 @@ export default function Portfolio() {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer ${
+                  className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
                     activeCategory === cat
-                      ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-600/30'
-                      : 'bg-slate-900/80 text-slate-300 border border-slate-800 hover:border-slate-700 hover:text-white'
+                      ? 'bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20'
+                      : 'bg-white text-slate-700 border border-slate-200 hover:border-amber-400 hover:text-slate-950 shadow-sm'
                   }`}
                 >
                   {cat}
@@ -73,21 +74,21 @@ export default function Portfolio() {
                 placeholder="Search by tech, keyword..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white text-xs sm:text-sm placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"
+                className="w-full pl-10 pr-4 py-2 rounded-xl bg-white border border-slate-200 text-slate-900 text-xs sm:text-sm placeholder-slate-400 focus:outline-none focus:border-amber-500 shadow-sm transition-colors"
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Project Grid */}
-      <section className="py-20 border-b border-slate-800/60">
+      {/* Project Grid (Clean White Background) */}
+      <section className="py-20 bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {filteredProjects.length === 0 ? (
-            <div className="text-center py-20 bg-slate-900/20 rounded-2xl border border-slate-800/60">
-              <Sparkles className="w-10 h-10 text-slate-500 mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-white mb-2">No projects matched your criteria</h3>
-              <p className="text-sm text-slate-400 mb-6">
+            <div className="text-center py-20 bg-slate-50 rounded-2xl border border-slate-200">
+              <Sparkles className="w-10 h-10 text-slate-400 mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-slate-900 mb-2">No projects matched your criteria</h3>
+              <p className="text-sm text-slate-500 mb-6">
                 Try clearing your search query or selecting a different category filter.
               </p>
               <Button
@@ -111,13 +112,18 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Scoping CTA */}
-      <section className="py-20 text-center">
+      {/* Scoping Dark CTA */}
+      <section className="py-20 bg-slate-950 text-white text-center border-t border-slate-800">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-400 mb-4">
+            <span className="w-6 h-0.5 bg-amber-500"></span>
+            <span>LET'S BUILD</span>
+            <span className="w-6 h-0.5 bg-amber-500"></span>
+          </div>
+          <h2 className="text-3xl font-extrabold text-white mb-4">
             Building a Similar Product or Platform?
           </h2>
-          <p className="text-slate-400 text-sm mb-8">
+          <p className="text-slate-300 text-sm mb-8">
             We can architect and deliver your system using these exact battle-tested patterns.
           </p>
           <Button to="/contact" size="lg" icon={ArrowRight} iconPosition="right">

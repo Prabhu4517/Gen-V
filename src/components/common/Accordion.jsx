@@ -23,24 +23,24 @@ export default function Accordion({ items = [], allowMultiple = false, className
         return (
           <div
             key={idx}
-            className={`rounded-2xl border transition-colors overflow-hidden ${
+            className={`rounded-2xl border transition-all overflow-hidden ${
               isOpen
-                ? 'bg-slate-900/90 border-indigo-500/40 shadow-lg shadow-indigo-500/5'
-                : 'bg-slate-900/40 border-slate-800/80 hover:border-slate-700'
+                ? 'bg-white border-amber-500 shadow-md'
+                : 'bg-white border-slate-200 hover:border-slate-300'
             }`}
           >
             <button
               type="button"
               onClick={() => toggleItem(idx)}
               aria-expanded={isOpen}
-              className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 cursor-pointer"
+              className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 cursor-pointer"
             >
-              <span className="text-base sm:text-lg font-medium text-slate-100 pr-4">
+              <span className="text-base sm:text-lg font-bold text-slate-900 pr-4">
                 {item.question || item.title}
               </span>
               <span
-                className={`p-1.5 rounded-lg bg-slate-800 text-slate-300 transition-transform duration-300 shrink-0 ${
-                  isOpen ? 'rotate-180 bg-indigo-600 text-white' : ''
+                className={`p-1.5 rounded-lg transition-transform duration-300 shrink-0 ${
+                  isOpen ? 'rotate-180 bg-amber-500 text-slate-950 font-bold' : 'bg-slate-100 text-slate-600'
                 }`}
               >
                 <ChevronDown className="w-4 h-4" />
@@ -48,7 +48,7 @@ export default function Accordion({ items = [], allowMultiple = false, className
             </button>
 
             {isOpen && (
-              <div className="px-6 pb-6 pt-1 text-slate-300 text-sm sm:text-base leading-relaxed border-t border-slate-800/60 mt-1">
+              <div className="px-6 pb-6 pt-1 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100 mt-1">
                 {item.answer || item.content}
               </div>
             )}

@@ -20,21 +20,23 @@ export default function Button({
   ...props
 }) {
   const baseStyles =
-    'inline-flex items-center justify-center font-medium transition-all duration-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-slate-950 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer';
+    'inline-flex items-center justify-center font-medium transition-all duration-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-slate-950 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer';
 
   const sizeStyles = {
-    sm: 'px-3 py-1.5 text-xs gap-1.5',
-    md: 'px-5 py-2.5 text-sm gap-2',
-    lg: 'px-7 py-3.5 text-base gap-2.5 font-semibold'
+    sm: 'px-3.5 py-1.5 text-xs gap-1.5 font-semibold',
+    md: 'px-5 py-2.5 text-sm gap-2 font-semibold',
+    lg: 'px-7 py-3.5 text-base gap-2.5 font-bold tracking-wide'
   };
 
   const variantStyles = {
     primary:
-      'bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white shadow-lg shadow-indigo-600/25 hover:shadow-indigo-600/40 hover:brightness-110 active:scale-[0.98]',
+      'bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 active:scale-[0.98]',
     secondary:
-      'bg-slate-800 text-slate-100 hover:bg-slate-700 border border-slate-700/80 hover:border-slate-600 active:scale-[0.98]',
+      'bg-slate-900 text-white hover:bg-slate-800 border border-slate-700/80 active:scale-[0.98]',
     outline:
-      'border border-indigo-500/40 text-indigo-400 hover:bg-indigo-500/10 hover:border-indigo-400 active:scale-[0.98]',
+      'border-2 border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-slate-950 font-bold active:scale-[0.98]',
+    dark:
+      'bg-slate-950 text-white hover:bg-slate-900 border border-slate-800 active:scale-[0.98]',
     ghost:
       'text-slate-300 hover:text-white hover:bg-slate-800/60 active:scale-[0.98]'
   };

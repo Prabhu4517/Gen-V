@@ -3,13 +3,13 @@
  * Keep all company metadata centralized and easily customizable.
  */
 export const companyConfig = {
-  name: "GEN V Technologies",
-  legalName: "GEN V Technologies Pvt. Ltd.",
+  name: "GEN V Solutions",
+  legalName: "GEN V Solutions",
   shortName: "GEN V",
   tagline: "Engineering Next-Generation Digital Products & Enterprise Software",
   description:
     "We partner with ambitious startups and modern enterprises to architect, build, and scale resilient web platforms, mobile applications, AI workflows, and cloud systems.",
-  
+
   // Contact Information
   contact: {
     email: "contact@genv.tech",
@@ -26,7 +26,7 @@ export const companyConfig = {
       country: "United States",
       display: "San Francisco, CA & Global Delivery"
     },
-    workingHours: "Mon - Fri: 9:00 AM - 6:00 PM (PST)",
+    workingHours: "Mon - Fri: 9:30 AM - 6:30 PM (PST)",
     supportAvailability: "24/7 SLA Support for Enterprise Retainers"
   },
 
